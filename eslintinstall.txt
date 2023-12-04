@@ -1,0 +1,10 @@
+npx eslint --init
+npx tsc --init
+
+
+SI No agarra las configuraciones, hay que impementarle lo siguiente:
+"parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+        }
