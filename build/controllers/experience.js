@@ -17,9 +17,7 @@ const experience_1 = __importDefault(require("../schemas/experience"));
 const getAllExperience = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const experiences = yield experience_1.default.find();
-        res.json({
-            experiences
-        });
+        res.json(experiences);
     }
     catch (error) {
         res.status(401).json({

@@ -16,10 +16,8 @@ exports.getAllProject = void 0;
 const project_1 = __importDefault(require("../schemas/project"));
 const getAllProject = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const project = yield project_1.default.find();
-        res.json({
-            project
-        });
+        const projects = yield project_1.default.find();
+        res.json(projects);
     }
     catch (error) {
         res.status(401).json({
