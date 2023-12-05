@@ -4,10 +4,10 @@ const __importDefault = (this && this.__importDefault) || function (mod) {
 }
 Object.defineProperty(exports, '__esModule', { value: true })
 const express_1 = __importDefault(require('express'))
-const cors_1 = require('./middlewares/cors')
-const mongo_1 = require('./dataBase/mongo')
-const experience_1 = __importDefault(require('./routes/experience'))
-const project_1 = __importDefault(require('./routes/project'));
+const cors_1 = require('./build/middlewares/cors')
+const mongo_1 = require('./build/dataBase/mongo')
+const experience_1 = __importDefault(require('./build/routes/experience'))
+const project_1 = __importDefault(require('./build/routes/project'));
 (0, mongo_1.MongoDBConnection)()
   .then(() => {
     let _a
