@@ -22,6 +22,11 @@ const ProjectSchema = new Schema({
   git: {
     type: String,
     required: [true, 'The git is required']
+  },
+  visible: {
+    type: Boolean,
+    default: true,
+    requered: true
   }
 })
 

@@ -34,6 +34,11 @@ const ProjectSchema = new mongoose_1.Schema({
     git: {
         type: String,
         required: [true, 'The git is required']
+    },
+    visible: {
+        type: Boolean,
+        default: true,
+        requered: true
     }
 });
 ProjectSchema.methods.toJSON = function () {
