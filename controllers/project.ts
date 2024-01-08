@@ -3,7 +3,7 @@ import Project from '../schemas/project'
 
 const getAllProject = async (req: Request, res: Response) => {
   try {
-    const projects = await Project.find({ visible: false })
+    const projects = await Project.find({ visible: true })
     res.json(
       projects
     )
